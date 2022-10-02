@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=VT323&display=swap');
+/* VT323 and Bungee Inline */
+body{
+    background-image: url("background.jpeg");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bud{
+    width: 80px;
+    position: absolute;
+    left: 235px;
+    top: 325px;
+}
+.flashcard{
+    border: 1px solid black;
+    height: 250px;
+    width: 175px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -20px;
+    background-color: white;
+}
+.flashcard:hover{
+    animation: card-up 0.7s forwards;
+}
+@keyframes card-up{
+    from{bottom: -20px}
+    to{bottom: 20px;}
+}
+.flashcard-row{
+    width: 750px;
+}
+.flashcard-container{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.tree{
+    width: 450px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -2;
+}
+.main-display{
+    height: 1500px;
+}
+.card-icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 40px;
+}
+.card-content{
+    text-align: center;
+    margin-top: 50px;
+    font-family: "VT323", sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+    user-select: none;
+}
+.card-desc{
+    font-size: 16px;
+}
+.black-screen{
+    background-color: black;
+    opacity: 0.75;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 200px;
+}
+.title-head{
+    opacity: 1;
+    font-family: "Bungee Inline", sans-serif;
+    color: rgb(27, 208, 84);
+    font-size: 80px;
+}
+#init-screen{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+}
+.title-button{
+    border: 2px solid rgb(27, 208, 84);
+    color:rgb(27, 208, 84);
+    background-color: transparent;
+    font-family: "VT323", sans-serif;
+    padding: 5px 30px 5px 30px;
+    font-size: 30px;
+    border-radius: 30px;
+}
+.title-button:hover{
+    background-color: rgb(27, 208, 84);
+    color: black;
+}
+.button-group{
+    text-align: center;
+}
+.button-group > button{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+.title-text{
+    font-size: 40px; 
+    color:rgb(27, 208, 84);
+    font-family: "VT323", sans-serif;
+}
+.monster{
+    height: 600px;
+    position: absolute;
+    bottom: 10%;
+    right: 30px;
+}
+.health-bar{
+    background-color: rgb(101, 101, 101);
+    height: 35px;
+    position: absolute;
+    width: 350px;
+    top: 10px;
+    border-radius: 30px;
+}
+.inner-bar{
+    background: rgb(200, 224, 163);
+    text-align: center;
+    font-family: "VT323", sans-serif;
+    font-size: 25px;
+    border-radius: 30px;
+    height: 100%;
+}
+.heal-tag{
+    background-color: white;
+    border: 1px solid black;
+    height: 50px;
+    position: absolute;
+    padding: 10px;
+    font-family: "VT323", sans-serif;
+    cursor: url(scepter.cur), pointer;
+}
+.center-box{
+    display: block;
+    margin-top: 200px;
+    margin-left: 100px;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    border-width: 8px;
+    border-color: rgb(210,140,95);
+    border-style: ridge;
+    box-shadow: -8px 5px 8px rgb(180,140,90);
+    color:rgb(60, 46, 43);
+
+    background-color: rgb(200,160,100);
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/26/13/47/wood-1932207_960_720.jpg);
+}
+.center-box > h1{
+    font-family: "Bungee Inline", serif;
+}
+.center-box > p{
+    font-family: "VT323", sans-serif;
+    font-size: 20px;
+}
+.arrow-tag{
+    background-color: white;
+    border: 1px solid black;
+    height: 50px;
+    position: absolute;
+    padding: 10px;
+    font-family: "VT323", sans-serif;
+    cursor: url(arrow.cur), pointer;
+}
